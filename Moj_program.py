@@ -121,3 +121,89 @@ print("Napiwek 20% wynosi: ", (int(rachunek)* 20)/100)
 #-----------------------------------------
 napis = input("Podaj jakiś wyraz: ")
 print(("\n" + napis) * 30)
+#-----------------------------------------
+#Mój program
+number1 = int(input("\nPodaj dowolną liczbe calkowitą\n"))
+number2 = int(input("\nPodaj dowolną liczbe calkowitą\n"))
+number3 = int(input("\nPodaj dowolną liczbe calkowitą\n"))
+print("Suma wszystkich liczb wynosi ", number1 + number2 + number3)
+#-----------------------------------------
+cena_podstawowa = int(input("Podaj cenę samochodu: \n"))
+podatek = (cena_podstawowa * 19)/100
+opłata_rej = (cena_podstawowa * 2)/100
+prowizja = 2000
+dostarczenie = 500
+print("Auto: ", cena_podstawowa, "zł.\n" \
+      "Podatek: ", podatek, "zł.\n" \
+      "Opłata rejestracyjna: ", opłata_rej, "zł.\n" \
+      "Prowizja od sprzedaży: ", prowizja, "zł.\n" \
+      "Koszt dostarczenia samochodu: ", dostarczenie, "zł.\n" \
+      "Całkowity koszt samochodu wynosi: ", \
+      cena_podstawowa+podatek+opłata_rej+prowizja+dostarczenie)
+#-----------------------------------------
+print(3==4)
+print(2!=2)
+print("Ala ma kota"=="Ola ma kota")
+print(3==5 and 1>0 and 4<5)
+print(3==3 or 2>4 or 5>7)
+#-----------------------------------------
+if 2 !=5:
+    print('Ok')
+#-----------------------------------------
+if 2==2:
+    print('ok')
+else:
+    print('błąd')
+#-----------------------------------------
+liczba = int(input("Podaj jakąś liczbę: \n"))
+if liczba > 15:
+    print("Twoja liczba jest większa od 15")
+elif liczba < 15:
+    print("Twoja liczba jest mniejsza niż 15")
+else:
+    print("Twoja liczba to 15")
+#-----------------------------------------
+import random
+number = random.randint(1,5)
+if number == 1:
+    print("Znajdziesz złotą monetę")
+elif number == 2:
+    print("W tym roku pojedziesz na egzotyczne wakacje")
+elif number == 3:
+    print("W tym tygodniu wygrasz w totolotka")
+elif number == 4:
+    print("Musisz o siebie dbać, pojawią się problemy zdrowotne")
+else:
+    print("W tym roku stracisz pracę")
+#-----------------------------------------
+odpowiedz = input("Czy lubisz podróżować? \n")
+if odpowiedz.lower() == 'tak':
+    czesto = input("Czy często podróżujesz? \n")
+    if czesto.lower() == 'tak':
+        print("Dobra robota")
+    else:
+        print("Podróżuj więcej")
+else:
+    print("Ciekawe, dlaczego nie?")
+#-----------------------------------------
+punkty = int(input("Podaj uzyskaną liczbę punktów: \n"))
+if punkty <= 20:
+    print("Ocena niedostateczna")
+if punkty > 20 and punkty <=40:
+    print("Ocena dopuszczająca")
+if punkty > 40 and punkty <=60:
+    print("Ocena dostateczna")
+else:
+    print("Ocena bardzo dobra")
+#-----------------------------------------
+import random
+o = 0
+re = 0
+for i in range(100):
+    number = random.randint(0, 1)
+    if number == 0:
+        o += 1
+    if number == 1:
+        re += 1
+        
+print("Orzeł wypadł: \n", o , "\nReszka wypadła: \n", re)
